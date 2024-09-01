@@ -1,7 +1,7 @@
 #!/bin/bash
 export KBUILD_BUILD_HOST="archlinux"
 export KBUILD_BUILD_USER="devbx"
-export PATH="$(pwd)/clang/bin:$PATH"
+#export PATH="$(pwd)/clang/bin:$PATH"
 export TZ="Asia/Kuching"
 
 make -j$(nproc --all) O=out ARCH=arm64 earth_defconfig
